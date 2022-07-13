@@ -1,7 +1,7 @@
 function [I, I3, I4, DM1] = Inter_Intra2(Idx,DM)
-%INTER_INTRA 此处显示有关此函数的摘要
-%   此处显示详细说明，相对于初始版本，不对距离矩阵进行归一化
-%   将平均距离改为最短距离
+%INTER_INTRA 姝ゅ鏄剧ず鏈夊叧姝ゅ嚱鏁扮殑鎽樿
+%   姝ゅ鏄剧ず璇︾粏璇存槑
+
 for i=1:1:size(DM,1)
     DM(i,i)=0;
 end

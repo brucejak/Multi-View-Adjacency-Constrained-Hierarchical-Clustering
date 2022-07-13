@@ -1,11 +1,6 @@
 function [eachlayerlabel,mass,R,cutlinkpower_all] = CNNC_PF(ALL_DM,isfig)
-% input: ALL_DM: distance matrix of n x n, where n means the number of total data samples;
-%       NAB(number of abnormal connections): 
-%                 when NAB=0, exploit the automatic mode to determine the number of clusters;
-%                 when NAB¡Ù0£¬remove the top NAB connections with the largest torque to obtain the clusters.                       
-% output: Idx: final clusters labels;
-%         cutnum: number of abnormal connections that are removed when exploiting the automatic mode.
-%¼ò»¯ĞŞ¸ÄÎªmult-view clustering
+
+%Â¼Ã²Â»Â¯ÃÃÂ¸Ã„ÃÂªmult-view clustering
 datanum=size(ALL_DM,1);cutlinkpower_all=[];eachlayerlabel=[];
 ljmat=sparse(datanum,datanum);
 %community=cell(1,datanum);

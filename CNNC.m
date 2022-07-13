@@ -1,10 +1,5 @@
 function [Idx,cutnum,cutlink,p,firstlayer_loc_onsortp,mass,R,cutlinkpower_all] = CNNC(ALL_DM,NAB)
-% input: ALL_DM: distance matrix of n x n, where n means the number of total data samples;
-%       NAB(number of abnormal connections): 
-%                 when NAB=0, exploit the automatic mode to determine the number of clusters;
-%                 when NAB��0��remove the top NAB connections with the largest torque to obtain the clusters.                       
-% output: Idx: final clusters labels;
-%         cutnum: number of abnormal connections that are removed when exploiting the automatic mode.
+
 %���޸�Ϊmult-view clustering
 datanum=size(ALL_DM,1);cutlinkpower_all=[];
 ljmat=sparse(datanum,datanum);
